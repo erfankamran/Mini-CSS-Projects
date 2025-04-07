@@ -19,6 +19,12 @@
 
 
 /* Reset CSS*/
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -66,4 +72,10 @@ table {
 /*  App Css */
 body{
     font-family: "Vazir";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: yellow;
+     
 }
