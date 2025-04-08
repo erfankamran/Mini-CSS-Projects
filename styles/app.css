@@ -1,85 +1,201 @@
 /* Font-Face */
 @font-face {
-    font-family:"Vazir" ;
-    src: url(../fonts/Vazir.woff2);
+  font-family: "Vazir";
+  src: url(../fonts/Vazir.woff2);
 }
 @font-face {
-    font-family:"Vazir-medium" ;
-    src: url(../fonts/Vazir-Medium.woff2);
+  font-family: "Vazir-medium";
+  src: url(../fonts/Vazir-Medium.woff2);
 }
 @font-face {
-    font-family:"Vazir-thin" ;
-    src: url(../fonts/Vazir-Thin.woff2);
+  font-family: "Vazir-thin";
+  src: url(../fonts/Vazir-Thin.woff2);
 }
 @font-face {
-    font-family:"Vazir-bold" ;
-    src: url(../fonts/Vazir-Bold.woff2);
+  font-family: "Vazir-bold";
+  src: url(../fonts/Vazir-Bold.woff2);
 }
-
-
 
 /* Reset CSS*/
 *,
 *::before,
-*::after{
-    box-sizing: border-box;
+*::after {
+  box-sizing: border-box;
 }
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /*  App Css */
-body{
-    font-family: "Vazir";
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-color: yellow;
-     
+body {
+  font-family: "Vazir";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
-h1{
-    color: #f1f;
+.card {
+  width: 592px;
+  height: 424px;
+  background-image: url("../images/card.png");
+  border-radius: 12px;
+  position: relative;
+}
+
+.card_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  position: absolute;
+  left: 20px;
+  top: 20px;
+
+}
+.card_messages {
+  width: 80px;
+  height: 48px;
+  padding: 5px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #1d2939;
+}
+.card_heart {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #c9184a;
+  border-radius: 100px;
+}
+.card_icon {
 }
