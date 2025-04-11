@@ -175,6 +175,15 @@ body {
   gap: 16px;
 
   position: absolute;
+  top: -50px;
+}
+.card:hover .card_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: all ease-in 150ms;
+
+  position: absolute;
   left: 20px;
   top: 20px;
 }
