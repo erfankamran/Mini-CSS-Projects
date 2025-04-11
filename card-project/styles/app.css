@@ -1,18 +1,18 @@
 /* Font-Face */
 @font-face {
-  font-family: "Vazir";
+  font-family: "vazir";
   src: url(../fonts/Vazir.woff2);
 }
 @font-face {
-  font-family: "Vazir-medium";
+  font-family: "vazir-medium";
   src: url(../fonts/Vazir-Medium.woff2);
 }
 @font-face {
-  font-family: "Vazir-thin";
+  font-family: "vazir-thin";
   src: url(../fonts/Vazir-Thin.woff2);
 }
 @font-face {
-  font-family: "Vazir-bold";
+  font-family: "vazir-bold";
   src: url(../fonts/Vazir-Bold.woff2);
 }
 
@@ -126,7 +126,7 @@ section {
   display: block;
 }
 body {
-  line-height: 1;
+  line-height: 1.5;
 }
 ol,
 ul {
@@ -163,8 +163,12 @@ body {
   background-image: url("../images/card.png");
   border-radius: 12px;
   position: relative;
+  overflow: hidden;
 }
-
+.card:hover .card_content {
+  bottom: 0;
+  transition: all ease-in 150ms;
+}
 .card_wrapper {
   display: flex;
   align-items: center;
@@ -173,7 +177,6 @@ body {
   position: absolute;
   left: 20px;
   top: 20px;
-
 }
 .card_messages {
   width: 80px;
@@ -197,5 +200,25 @@ body {
   background-color: #c9184a;
   border-radius: 100px;
 }
-.card_icon {
+
+.card_content {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: -142px;
+
+  padding: 36px 24px 24px;
+  color: aliceblue;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 00) 0%, #000 100%);
+
+  transition: all ease-in 150ms;
+}
+.card_title {
+  font-family: "vazir-bold";
+  font-size: 24px;
+  margin-bottom: 10px;
+
+}
+.card_caption {
+  font-size: 16px;
 }
