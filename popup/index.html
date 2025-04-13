@@ -7,29 +7,78 @@
     <link rel="stylesheet" href="/styles/app.css" />
   </head>
   <body>
-<button class="btn_primary" type="button">
-  
- <span> عضویت در خبر نامه</span>
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 25 24" fill="none">
-    <path d="M10.07 5.93018L4 12.0002L10.07 18.0702" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-    <path opacity="0.4" d="M21 12H4.16998" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
+    <button class="btn_primary" type="button">
+      <span> عضویت در خبر نامه</span>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 25 24"
+        fill="none"
+      >
+        <path
+          d="M10.07 5.93018L4 12.0002L10.07 18.0702"
+          stroke="white"
+          stroke-width="1.5"
+          stroke-miterlimit="10"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          opacity="0.4"
+          d="M21 12H4.16998"
+          stroke="white"
+          stroke-width="1.5"
+          stroke-miterlimit="10"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
 
-</button>
+    <div class="overlay">
+      <div class="box">
+        <button type="button" class="close_btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M7.7572 7.75732L16.2425 16.2426"
+              stroke="white"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M7.75715 16.2426L16.2424 7.75732"
+              stroke="white"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <img src="./images/vector.png" alt="" class="box_img" />
 
+        <p>شماره شما ثبت شده</p>
+        <p>و با موفقیت عضو خبربامه شدید</p>
+      </div>
+    </div>
 
-<div class="overlay">
-  <div class="box">
-    <button type="button" class="close_btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-      <path d="M7.7572 7.75732L16.2425 16.2426" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M7.75715 16.2426L16.2424 7.75732" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-  </button>
-  <img src="./images/vector.png" alt="" class="box_img">
-    
-    <p>شماره شما ثبت شده</p>
-    <p>و با موفقیت عضو خبربامه شدید</p>
-  </div>
-</div>
+    <script>
+      let btn = document.querySelector(".btn_primary");
+      let btnClose = document.querySelector(".close_btn");
+
+      btn.addEventListener("click", function () {
+        document.querySelector(".overlay").classList.add("overlay_show");
+      });
+      btnClose.addEventListener("click", function () {
+        document.querySelector(".overlay").classList.remove("overlay_show");
+      });
+    </script>
   </body>
 </html>
